@@ -6,8 +6,13 @@ end
 
 # Part II
 def max_2_sum arr
-  # YOUR CODE HERE
+  if(arr.length == 0)
+    return 0
+  else
+    arr.max(2).reduce(:+)
+  end
 end
+
 
 # Part III
 def sum_to_n? arr, n
