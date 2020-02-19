@@ -19,4 +19,7 @@ class BookInStock
     def isbn=(isbn)
         @isbn = isbn
     end
+    def price_as_string
+        return "$%.2f" % price
+    end
 end
